@@ -1,0 +1,13 @@
+|S.no | Title      | Problem        | Solution      |  Difficulty | Revisit Require |
+|-----:|------------|--------------:|-------------:| ----------:|------------------:|
+|1|apparently_mod_strings.py|[Problem](https://www.codewars.com/kata/5b049d57de4c7f6a6c0001d7/train/python)|[Solution](https://github.com/samahuja642/ds/blob/master/basics/practice/apparently_mod_strings.py)||Yes|
+|2|descending_order.py|[Problem](https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/python)|[Solution](https://github.com/samahuja642/ds/blob/master/basics/practice/descending_order.py)||Yes|
+|3|disemvowel_trolls.py|[Problem](https://www.codewars.com/kata/52fba66badcd10859f00097e/train/python)|[Solution](https://github.com/samahuja642/ds/blob/master/basics/practice/disemvowel_trolls.py)|||Yes|
+|4|descending_order.py|[Problem](https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/python)|[Solution](https://github.com/samahuja642/ds/blob/master/basics/practice/descending_order.py)||Yes|
+|5|descending_order.py|[Problem](https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/python)|[Solution](https://github.com/samahuja642/ds/blob/master/basics/practice/descending_order.py)||Yes|
+|6|descending_order.py|[Problem](https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/python)|[Solution](https://github.com/samahuja642/ds/blob/master/basics/practice/descending_order.py)||Yes|
+|7|descending_order.py|[Problem](https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/python)|[Solution](https://github.com/samahuja642/ds/blob/master/basics/practice/descending_order.py)||Yes|
+|8|descending_order.py|[Problem](https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/python)|[Solution](https://github.com/samahuja642/ds/blob/master/basics/practice/descending_order.py)||Yes|
+|9|descending_order.py|[Problem](https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/python)|[Solution](https://github.com/samahuja642/ds/blob/master/basics/practice/descending_order.py)||Yes|
+|10|descending_order.py|[Problem](https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/python)|[Solution](https://github.com/samahuja642/ds/blob/master/basics/practice/descending_order.py)||Yes|
+|11|descending_order.py|[Problem](https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/python)|[Solution](https://github.com/samahuja642/ds/blob/master/basics/practice/descending_order.py)||Yes|

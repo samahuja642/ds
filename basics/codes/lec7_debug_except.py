@@ -19,21 +19,21 @@
 ## list index out of range -> sub 1 to j
 ## get same list back -> iterate only over half
 ## --------------------------
-def rev_list(L):
-    """
-    input: L, a list
-    Modifies L such that its elements are in reverse order
-    returns: nothing
-    """
-    for i in range(len(L)//2):
-        j = len(L) - i - 1
-        temp = L[i]
-        L[i] = L[j]
-        L[j] = temp
+# def rev_list(L):
+#     """
+#     input: L, a list
+#     Modifies L such that its elements are in reverse order
+#     returns: nothing
+#     """
+#     for i in range(len(L)//2):
+#         j = len(L) - i - 1
+#         temp = L[i]
+#         L[i] = L[j]
+#         L[j] = temp
         
-L = [1,2,3,4]
-rev_list(L)
-print(L)
+# L = [1,2,3,4]
+# rev_list(L)
+# print(L)
 #
 #
 ########################################
@@ -71,79 +71,79 @@ print(L)
 ## n = 4 adds 4 -> need way to stop going once found a divisible num
 ##              -> use a flag
 ## --------------------------
-def primes_list(n):
-    """
-    input: n an integer > 1
-    returns: list of all the primes up to and including n
-    """
-    # initialize primes list
-    primes = [2]
-    # go through each of 3...n
-    for j in range(3,n+1):
-        is_div = False
-        # go through each elem of primes list
-        for p in primes:
-            if j%p == 0:
-                is_div = True
-        if not is_div:
-            primes.append(j)
-    return primes
+# def primes_list(n):
+#     """
+#     input: n an integer > 1
+#     returns: list of all the primes up to and including n
+#     """
+#     # initialize primes list
+#     primes = [2]
+#     # go through each of 3...n
+#     for j in range(3,n+1):
+#         is_div = False
+#         # go through each elem of primes list
+#         for p in primes:
+#             if j%p == 0:
+#                 is_div = True
+#         if not is_div:
+#             primes.append(j)
+#     return primes
 
-print(primes_list(2) )               
-print(primes_list(15)  )              
-
-
-######################################
-# EXAMPLE: Exceptions and input
-######################################
-#a = int(input("Tell me one number: "))
-#b = int(input("Tell me another number: "))
-#print("a/b = ", a/b)
-#print("a+b = ", a+b)
-
-try:
-    a = int(input("Tell me one number: "))
-    b = int(input("Tell me another number: "))
-    print("a/b = ", a/b)
-except:
-    print("Bug in user input.")
+# print(primes_list(2) )               
+# print(primes_list(15)  )              
 
 
-try:
-    a = int(input("Tell me one number: "))
-    b = int(input("Tell me another number: "))
-    print("a/b = ", a/b)
-    print("a+b = ", a+b)
-except ValueError:
-    print("Could not convert to a number.")
-except ZeroDivisionError:
-    print("Can't divide by zero")
-except:
-    print("Something went very wrong.")
+# ######################################
+# # EXAMPLE: Exceptions and input
+# ######################################
+# #a = int(input("Tell me one number: "))
+# #b = int(input("Tell me another number: "))
+# #print("a/b = ", a/b)
+# #print("a+b = ", a+b)
+
+# try:
+#     a = int(input("Tell me one number: "))
+#     b = int(input("Tell me another number: "))
+#     print("a/b = ", a/b)
+# except:
+#     print("Bug in user input.")
+
+
+# try:
+#     a = int(input("Tell me one number: "))
+#     b = int(input("Tell me another number: "))
+#     print("a/b = ", a/b)
+#     print("a+b = ", a+b)
+# except ValueError:
+#     print("Could not convert to a number.")
+# except ZeroDivisionError:
+#     print("Can't divide by zero")
+# except:
+#     print("Something went very wrong.")
 
 
 
-######################################
-# EXAMPLE: Raising your own exceptions
-######################################
-def get_ratios(L1, L2):
-    """ Assumes: L1 and L2 are lists of equal length of numbers
-        Returns: a list containing L1[i]/L2[i] """
-    ratios = []
-    for index in range(len(L1)):
-        try:
-            ratios.append(L1[index]/L2[index])
-        except ZeroDivisionError:
-            ratios.append(float('nan')) #nan = Not a Number
-        except:
-            raise ValueError('get_ratios called with bad arg')
-        else:
-            print("success")
-        finally:
-            print("executed no matter what!")
-    return ratios
+# ######################################
+# # EXAMPLE: Raising your own exceptions
+# ######################################
+# def get_ratios(L1, L2):
+#     """ Assumes: L1 and L2 are lists of equal length of numbers
+#         Returns: a list containing L1[i]/L2[i] """
+#     ratios = []
+#     for index in range(len(L1)):
+#         try:
+#             ratios.append(L1[index]/L2[index])
+#         except ZeroDivisionError:
+#             ratios.append(float('nan')) #nan = Not a Number
+#         except:
+#             raise ValueError('get_ratios called with bad arg')
+#         else:
+#             print("success")
+#         finally:
+#             print("executed no matter what!")
+#     return ratios
     
-print(get_ratios([1, 4], [2, 4]))
+# print(get_ratios([1, 4], [2, 4]))
 
 
 #######################################

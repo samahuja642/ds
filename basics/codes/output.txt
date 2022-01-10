@@ -1,47 +1,11 @@
-1
-2
-a: 1 b: 7 c: 2
-From 2008 to 2014 Taylor Swift wrote songs about 5 people!
-10
-10
-0
-['I', '<', '3', ' ', 'c', 's']
-['I', '3 cs']
-abc
-a_b_c
-[0, 3, 6, 9]
-1
-1
-['red', 'yellow', 'orange', 'pink']
-['red', 'yellow', 'orange', 'pink']
-['blue', 'green', 'grey', 'black']
-['blue', 'green', 'grey']
-['orange', 'red', 'yellow']
-None
-['grey', 'green', 'blue']
-['blue', 'green', 'grey']
-[['yellow', 'orange'], ['red']]
-['red', 'pink']
-[['yellow', 'orange'], ['red', 'pink']]
-[2, 3, 4] [1, 2, 5, 6]
-[3, 4] [1, 2, 5, 6]
-['blue', 'green']
-['red', 'yellow', 'orange']
-[['blue', 'green']]
-colors1 =  [['blue', 'green'], ['red', 'yellow', 'orange']]
-colors2 = [['blue', 'green'], ['red', 'yellow', 'orange']]
-colors1 =  [['blue', 'green'], ['yellow', 'orange']]
-colors2 = [['blue', 'green'], ['red', 'yellow', 'orange']]
-e = ['blue', 'green']
-e = ['yellow', 'orange']
-blue
-green
-yellow
-orange
-flat = ['blue', 'green', 'yellow', 'orange']
-None
-flat = ['blue', 'green', 'orange', 'yellow']
-flat = ['blue', 'green', 'orange', 'yellow']
-new_flat = ['yellow', 'orange', 'green', 'blue']
-['blue', 'black']
-[['blue', 'black'], ['yellow', 'orange']]
+[4, 3, 2, 1]
+[2]
+[2, 3, 5, 7, 11, 13]
+Tell me one number: Tell me another number: a/b =  3.75
+Tell me one number: Tell me another number: a/b =  2.063348416289593
+a+b =  677
+success
+executed no matter what!
+success
+executed no matter what!
+[0.5, 1.0]
