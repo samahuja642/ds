@@ -5,6 +5,7 @@ class node:
         self.left = None
         self.right = None
         self.parent = None
+        self.height = 0
 class BST:
     def __init__(self,ls=[]):
         self.root = node()
@@ -32,14 +33,14 @@ class BST:
                     elif val<temp.key:
                         temp.left = node(val)
                         temp.left.parent = temp
-                        print("Successfully Inserted.")
+                        # print("Successfully Inserted.")
                         loop = False
                     elif val>temp.key and temp.right!=None:
                         temp = temp.right
                     elif val>temp.key :
                         temp.right = node(val)
                         temp.right.parent = temp
-                        print("Successfully Inserted.")
+                        # print("Successfully Inserted.")
                         loop = False
                     else:
                         print("Value is already in the BST.")
@@ -61,14 +62,14 @@ class BST:
         temp = self.root
         while(True):
             if(temp.key == val):
-                print("Value Found Successfully.")
+                # print("Value Found Successfully.")
                 return temp
             elif(temp.key>val and temp.left!=None):
                 temp = temp.left 
             elif(temp.key<val and temp.right!=None):
                 temp = temp.right
             else:
-                print("No Such Value is there in BST.")
+                # print("No Such Value is there in BST.")
                 return None
     def deletion(self,Node):
         if(Node.left==None and Node.right==None):
@@ -84,20 +85,24 @@ class BST:
             else:
                 replacing_node.parent.right = None
             Node.key = to_replace_with
-
-
-tree = BST()
-tree.insert(20)
-tree.insert(15)
-tree.insert(30)
-tree.insert(27)
-tree.insert(39)
-tree.insert(1)
-tree.inorder(tree.root)
-print()
-print(tree.min_element_in_subtree(tree.root))
-print(tree.next_larger(tree.root))
-smallest = tree.search_node_by_val(1)
-print(tree.next_larger(smallest))
-tree.deletion(tree.search_node_by_val(20))
-tree.inorder(tree.root)
+    def height(self,Node):
+        if(Node == None):
+            return -1
+        return max(self.height(Node.left),self.height(Node.right)) + 1
+if __name__=='__main__':
+    tree = BST()
+    tree.insert(20)
+    tree.insert(15)
+    tree.insert(30)
+    tree.insert(27)
+    tree.insert(39)
+    tree.insert(1)
+    tree.inorder(tree.root)
+    print()
+    print(tree.min_element_in_subtree(tree.root))
+    print(tree.next_larger(tree.root))
+    smallest = tree.search_node_by_val(1)
+    print(tree.next_larger(smallest))
+    tree.deletion(tree.search_node_by_val(20))
+    tree.inorder(tree.root)
+    print(tree.height(tree.search_node_by_val(30)))
